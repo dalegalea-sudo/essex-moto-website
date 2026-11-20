@@ -10,3 +10,52 @@
 .art-adult{background-image:url("https://ahead4-stormbuggies.s3.eu-west-1.amazonaws.com/image-cache/c/o/m/m/a/commander-200-adults-quad-bike---black-ce3e090a4007d253ea8d8a8d9d152eed4384d915.jpeg")}
 .art-electric,.art-pit{background-image:url("https://ahead4-stormbuggies.s3.eu-west-1.amazonaws.com/image-cache/3/0/0/0/w/3000w-48v-electric-dirt-bike-1412---black-d0984c174eb620aae9355683472850c0f800b293.jpeg")}
 @media(max-width:650px){.hero-art{background-size:contain;min-height:245px}.category-art{background-size:contain}}
+
+/* ESSEX MOTO — festive winter graphics */
+.hero,.supplier-band{position:relative;isolation:isolate}
+.hero:before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.34;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg stroke='%23d9edff' stroke-width='2' stroke-linecap='round' fill='none' opacity='.8'%3E%3Cpath d='M28 18v24m-10-18 20 12m0-12L18 36M110 92v30m-13-22 26 14m0-14-26 14M76 8v14m-7-11 14 8m0-8-14 8'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(circle at 12% 18%,rgba(255,255,255,.75) 0 1px,transparent 2px),
+    radial-gradient(circle at 82% 32%,rgba(145,204,255,.8) 0 1px,transparent 2px);
+  background-size:150px 150px,95px 95px,130px 130px;
+}
+.hero:after{
+  content:"";position:absolute;left:0;right:0;top:0;height:5px;z-index:2;
+  background:linear-gradient(90deg,#8bd2ff,#fff,#4b9ff2,#dceeff,#8bd2ff);
+  box-shadow:0 0 18px rgba(93,174,255,.6);
+}
+.hero-copy,.hero-art{position:relative;z-index:1}
+.hero-art:after{
+  content:"❄";position:absolute;top:8%;left:9%;font-size:38px;
+  color:rgba(224,242,255,.8);text-shadow:0 0 18px #66b5ff;
+  pointer-events:none;
+}
+.topline{background:linear-gradient(90deg,#071426,#12345a,#071426);position:relative}
+.topline:after{content:"✦  ❄  ✦";color:#cce9ff;letter-spacing:7px;margin-left:14px}
+.header{box-shadow:0 5px 24px rgba(0,0,0,.22)}
+.brand-mark{box-shadow:0 0 14px rgba(54,151,255,.28)}
+.category-card{position:relative;overflow:hidden}
+.category-card:after{
+  content:"❄";position:absolute;right:10px;top:7px;z-index:2;
+  color:rgba(255,255,255,.88);font-size:17px;text-shadow:0 0 10px #60adff;
+  pointer-events:none;
+}
+.category-art{border-bottom:1px solid rgba(126,190,245,.35)}
+.supplier-band{
+  background-image:
+    radial-gradient(circle at 88% 20%,rgba(122,190,255,.18),transparent 25%),
+    linear-gradient(120deg,#0e2946,#102f52 55%,#0a1d34);
+}
+.supplier-band:after{
+  content:"❄  ✦  ❄";position:absolute;right:6vw;top:14px;
+  color:rgba(211,235,255,.45);font-size:22px;letter-spacing:12px;
+  pointer-events:none;
+}
+footer{border-top:1px solid rgba(115,178,235,.25)}
+@media(max-width:650px){
+  .topline:after{display:block;margin:2px 0 0;font-size:10px}
+  .hero:before{opacity:.23}
+  .supplier-band:after{font-size:15px;right:5vw}
+}
